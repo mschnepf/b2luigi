@@ -17,9 +17,6 @@ class MyNumberTask(b2luigi.Task):
         print("I am now starting a task")
         random_number = random.random()
 
-        if self.some_parameter == 3:
-            raise ValueError
-
         with open(self.get_output_file_name("output_file.txt"), "w") as f:
             f.write(f"{random_number}\n")
 
