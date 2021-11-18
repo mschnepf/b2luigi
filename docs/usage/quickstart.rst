@@ -28,7 +28,7 @@ Later, we will build the average of those numbers.
 
         .. code-block:: python
 
-            b2luigi.set_setting("results")
+            b2luigi.set_setting("result_dir", "results")
 
         You can ignore that for not - we will come back to it later.
 
